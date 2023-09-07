@@ -645,13 +645,23 @@ footer {
 }
 
 .inquiryParts {
-  margin: 30px 15px;
+  margin-top: 30px;
   text-align: center;
   min-height: 200px;
   min-width: 280px;
-  width: 100%;
+  width: 42.2%;
   border-radius: 10px;
   background-color: white;
+}
+
+.inquiryParts.first {
+  margin-left: 6.5%;
+  margin-right: 1.3%;
+}
+
+.inquiryParts.second {
+  margin-right: 6.5%;
+  margin-left: 1.3%;
 }
 
 .inquiryTitle {
@@ -682,7 +692,7 @@ footer {
   text-decoration: none;
   color: white;
   padding: 20px 40px;
-  border-radius: 65px;
+  border-radius: 35px;
   background: -moz-linear-gradient(
     5.86% -33.1% -30deg,
     rgba(251, 176, 59, 1) 0%,
@@ -753,7 +763,6 @@ footer {
 }
 
 .inquiryForm a:hover {
-  font-size: 100px;
   z-index: 5;
   background-position: 99% 50%;
 }
@@ -763,12 +772,6 @@ footer {
   background-size: 200% auto;
   /*アニメーションの指定*/
   transition: all 0.3s ease-out;
-}
-
-/*hoverした際の、背景の場所とテキスト色の変更*/
-.inquiryForm a:hover {
-  font-size: 26px;
-  background-position: 99% 50%;
 }
 
 /*========= ページトップのためのCSS ===============*/
@@ -2061,6 +2064,14 @@ button.color {
   margin: 0 auto;
 }
 
+div.inquiry > p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 5px;
+}
+
 #templateB .inquiry p {
   margin-bottom: 0;
 }
@@ -2094,10 +2105,11 @@ button.color {
 
 #templateB .lineuptitle.relationtitle h2 {
   font-size: 24px;
+  margin-bottom: 0;
 }
 
 #templateB .search-query.related-products .button-box2 button {
-  max-width: 590px;
+  max-width: 600px;
   width: 100%;
   text-align: left;
   color: #792ddc;
@@ -2113,7 +2125,7 @@ button.color {
 }
 
 #templateB .button-box2 button img {
-  display: inline-block;
+  display: block;
   float: right;
 }
 
@@ -2455,6 +2467,10 @@ span.breadcrumb_last {
     height: 12px;
     margin: 0 10px;
   }
+
+  .button-box2 {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 968px) {
@@ -2468,16 +2484,35 @@ span.breadcrumb_last {
     margin: 0 8px;
   }
 
-  .inquiryParts {
+  .button-box2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #templateB .search-query.related-products .button-box2 button {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .inquiryParts.first {
     margin-top: 20px;
     min-height: 110px;
     max-width: 540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 17px;
   }
 
   .inquiryParts.second {
-    margin-top: 0;
+    margin-top: 20px;
+    min-height: 110px;
+    max-width: 540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0;
+    padding: 17px;
   }
 
   .footer-search {
@@ -2604,14 +2639,6 @@ span.breadcrumb_last {
 }
 
 @media screen and (max-width: 1208px) {
-  #templateB p#breadcrumbs {
-    font-size: 1rem;
-  }
-
-  #templateB .topicPath h1 {
-    font-size: 1.2rem;
-  }
-
   .title,
   .value {
     padding: 10px 20px;
@@ -2638,12 +2665,13 @@ span.breadcrumb_last {
   .inquiry {
     width: 100%;
     padding-bottom: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 
   .inquirySection {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -2669,8 +2697,21 @@ span.breadcrumb_last {
 }
 
 @media screen and (max-width: 968px) {
+  #templateB p#breadcrumbs {
+    font-size: 1.2rem;
+  }
+
+  #templateB .topicPath h1 {
+    font-size: 1.6rem;
+  }
+
   .sitemapbg {
     display: none;
+  }
+
+  .inquirySection {
+    display: flex;
+    flex-direction: column;
   }
 
   .inquiryTitle {
@@ -2697,6 +2738,15 @@ span.breadcrumb_last {
     font-size: 1.6rem;
     min-height: 45px;
     padding: 13px 25px;
+  }
+
+  div.inquiry > p {
+    font-size: 1.6rem;
+    padding-top: 25px;
+  }
+
+  .inquiryTitle {
+    padding-bottom: 5px;
   }
 
   .footerband {
