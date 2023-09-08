@@ -1912,6 +1912,10 @@ iframe {
   padding: 0 0 0 25px;
 }
 
+.search-query.text-area ul {
+  padding-left: 0;
+}
+
 td.title {
   background-color: #792ddc;
   color: white;
