@@ -2461,6 +2461,10 @@ span.breadcrumb_last {
   width: auto !important;
 }
 
+.footer-search ul {
+  padding-left:0
+  }
+
 @media screen and (min-width: 969px) {
   .footer-search {
     display: none;
@@ -2559,8 +2563,7 @@ span.breadcrumb_last {
     place-items: center;
     border: none;
     border-radius: 5px;
-    background: url(http://trust.navigator-of-engineering.com/wp-content/uploads/f97b2b112bb2d19d5825154f01456c1f-1.png)
-      no-repeat #666666;
+    background: url(../img/f97b2b112bb2d19d5825154f01456c1f-1.png) no-repeat #666666;
     background-position: 96%;
   }
 
