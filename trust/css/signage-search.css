@@ -3183,7 +3183,7 @@ div.inquiry>p {
 }
 
 #signage-search .accordion-collapse.collapsing .title {
-  transition: all 1s ease-out;
+  transition: all 5s ease-out;
   /* display: none; */
   color: black;
 }
@@ -3524,6 +3524,12 @@ h2 {
     padding: 0 20px;
   }
 
+
+  .inquiry {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
   .inquirySection {
     display: flex;
     flex-direction: column;
@@ -3709,6 +3715,7 @@ div.inquiry > p {
   #signage-search .search-query button {
     border-radius: 0px;
     border: 0px;
+    background: white;
   }
 
   #signage-search .card.left {
