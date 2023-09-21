@@ -1668,6 +1668,7 @@ input:checked+.tab_class+.content_class {
   margin-bottom: 100px;
 }
 
+
 #signage-search .dropdown-menu .first {
   padding-left: 0%;
 }
@@ -1959,6 +1960,14 @@ div.arrow img {
   color: #792DDC;
   background-color: white;
   border-radius: 5px;
+}
+
+#signage-search .defult#myButton{
+  color: #CCCCCC;
+}
+
+.button-box button {
+  background:white;
 }
 
 .button img {
