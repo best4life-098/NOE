@@ -226,7 +226,9 @@
               <div class="search-query">
                 <div class="button-box"><button type="button">選択をリセット</button>
                   <button class="color" type="button">条件にあうサイネージを検索<img src="./img/虫眼鏡.png"></button>
-                  <button class="defult">☓ 閉じる</button>
+                    <button class="defult" id="myButton"  onclick="changeText()" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"value="閉じる">
+                      ☓ 閉じる
+                  </button>
                 </div>
               </div>
 
@@ -910,6 +912,7 @@
         var button = document.getElementById("myButton");
         button.classList.toggle("radius");
       }
+
     </script>
 
   </body>
