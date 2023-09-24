@@ -3691,6 +3691,7 @@ div.inquiry > p {
 
   .dropdown p.left {
     margin: 0;
+    margin-bottom: 5px;
   }
 
   #signage-search .card-body h3.card-product {
