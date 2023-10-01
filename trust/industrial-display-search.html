@@ -319,7 +319,9 @@
                 <div class="search-query">
                   <div class="button-box"><button type="button">選択をリセット</button>
                     <button class="color" type="button">条件にあうサイネージを検索<img src="./img/虫眼鏡.png"></button>
-                    <button class="defult">☓ 閉じる</button>
+                      <button class="defult" id="myButton" onclick="changeText()" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" value="閉じる">
+                        ☓ 閉じる
+                    </button>
                   </div>
                 </div>
               </div>
@@ -407,980 +409,982 @@
           <div class="triangle_under">
           </div>
 
-          <div class="table-wrap">
-          <table class="catelory-list first">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class="part-number">
-              </th>
-              <th class="categoly">品番/メーカー/カテゴリ</th>
-              <th class="item">表示形式</th>
-              <th class="item">構造</th>
-              <th class="item">サイズ<br>（インチ）</th>
-              <th class="item">電源<br>電圧</th>
-              <th class="item">インター<br>フェイス</th>
-              <th class="item">色</th>
-              <th class="item">タッチ<br>パネル</th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
+          <div class="table-wrap-main">
+            <div class="table-wrap">
+              <table class="catelory-list first">
+                <tr class="catelory-list-title">
+                  <th></th>
+                  <th class="part-number">
+                  </th>
+                  <th class="categoly">品番/メーカー/カテゴリ</th>
+                  <th class="item">表示形式</th>
+                  <th class="item">構造</th>
+                  <th class="item">サイズ<br>（インチ）</th>
+                  <th class="item">電源<br>電圧</th>
+                  <th class="item">インター<br>フェイス</th>
+                  <th class="item">色</th>
+                  <th class="item">タッチ<br>パネル</th>
                 </tr>
+
+                <td class="new-icon-area">
+                  <table>
+                    <tr>
+                      <td class="new-icon">
+                        <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" alt="">
+                      </td>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        </label>
+                      </div>
+                    </tr>
+                  </table>
+                </td>
+
+                <td class="category-title">
+                  <img src="./img/WEG005016AG.jpg" alt="">
+                </td>
+
+                <td class="category-">
+                  <table class="category-details">
+                    <tr>
+                      <th class="part number">1.26インチ50*16グラフィック有機ELディスプレイWEG005016A</th>
+                    </tr>
+                    <tr>
+                      <td class="Maker">メーカー：Winstar Display</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <td class="Product-name">グラフィック有機ELモジュール</td>
+                          <td class="Product-name2">産業用</td>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="space">
+                  <div class="">50×16</div>
+                </td>
+                <td class="space">
+                  <div class="">COB</div>
+                </td>
+                <td class="space">
+                  <div class="">1.26</div>
+                </td>
+                <td class="space">
+                  <div class="">5V</div>
+                </td>
+                <td class="space">
+                  <div class="">6800<br>8080<br>spi</div>
+                </td>
+                <td class="space">
+                  <div class="">白色<br>黄色<br>青色<br>緑色<br></div>
+                </td>
+                <td class="space">
+                  <div class="">なし</div>
+                </td>
               </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WEG005016AG.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th class="part number">1.26インチ50*16グラフィック有機ELディスプレイWEG005016A</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">グラフィック有機ELモジュール</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">
-              <div class="">50×16</div>
-            </td>
-            <td class="space">
-              <div class="">COB</div>
-            </td>
-            <td class="space">
-              <div class="">1.26</div>
-            </td>
-            <td class="space">
-              <div class="">5V</div>
-            </td>
-            <td class="space">
-              <div class="">6800<br>8080<br>spi</div>
-            </td>
-            <td class="space">
-              <div class="">白色<br>黄色<br>青色<br>緑色<br></div>
-            </td>
-            <td class="space">
-              <div class="">なし</div>
-            </td>
-          </table>
-
-          <!-- 二番目以降 -->
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WEG005016AG.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>(参考)タイトルが長く二行を超える場合は最後を省略するWEG00…</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">グラフィック有機ELモジュール</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">
-              <div class="">50×16</div>
-            </td>
-            <td class="space">
-              <div class="">COB</div>
-            </td>
-            <td class="space">
-              <div class="">1.26</div>
-            </td>
-            <td class="space">
-              <div class="">5V</div>
-            </td>
-            <td class="space">
-              <div class="">6800<br>8080<br>spi</div>
-            </td>
-            <td class="space"> デュアルカラー（MOQあり）</td>
-            <td class="space">
-              <div class="">なし</div>
-            </td>
-          </table>
-
-
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WEG005016AG.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>1.26インチ50*16グラフィック有機ELディスプレイWEG005016A</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">グラフィック有機ELモジュール</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">
-              <div class="">50×16</div>
-            </td>
-            <td class="space">
-              <div class="">COB</div>
-            </td>
-            <td class="space">
-              <div class="">1.26</div>
-            </td>
-            <td class="space">
-              <div class="">5V</div>
-            </td>
-            <td class="space">
-              <div class="">6800<br>8080<br>spi</div>
-            </td>
-            <td class="space">
-              <div class="">デュアルカラー(MOQあり)</div>
-            </td>
-            <td class="space">
-              <div class="">なし</div>
-            </td>
-          </table>
-
-
-          <!-- 128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP -->
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WEO012864AWPP3A00000.jpg" class="contain" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">タッチパネル 有機 EL</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">128 x 64</td>
-            <td class="space">COG+PCB+FR</td>
-            <td class="space">1.54</td>
-            <td class="space">3V</td>
-            <td class="space">6800<br>8080<br>spi<br>I2C</td>
-            <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色</td>
-            <td class="space">PCAP<br>OCA</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WEO012864AWPP3A00000.jpg" class="contain" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">タッチパネル 有機 EL</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">128 x 64</td>
-            <td class="space">COG+PCB+FR</td>
-            <td class="space">1.54</td>
-            <td class="space">3V</td>
-            <td class="space">6800<br>8080<br>spi<br>I2C</td>
-            <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色</td>
-            <td class="space">PCAP<br>OCA</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WEO012864AWPP3A00000.jpg" class="contain" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">タッチパネル 有機 EL</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">128 x 64</td>
-            <td class="space">COG+PCB+FR</td>
-            <td class="space">1.54</td>
-            <td class="space">3V</td>
-            <td class="space">6800<br>8080<br>spi<br>I2C</td>
-            <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色</td>
-            <td class="space">PCAP<br>OCA</td>
-          </table>
-
-
-          <!-- 1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A -->
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WO1602B-YYH.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">キャラクタ有機ELモジュール</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">16×2</td>
-            <td class="space">COG</td>
-            <td class="space">1.2</td>
-            <td class="space">5V</td>
-            <td class="space">I2C</td>
-            <td class="space"></td>
-            <td class="space">なし</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WO1602B-YYH.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">キャラクタ有機ELモジュール</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">16×2</td>
-            <td class="space">COG</td>
-            <td class="space">1.2</td>
-            <td class="space">5V</td>
-            <td class="space">I2C</td>
-            <td class="space"></td>
-            <td class="space">なし</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WO1602B-YYH.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">キャラクタ有機ELモジュール</td>
-                      <td class="Product-name2">産業用</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">16×2</td>
-            <td class="space">COG</td>
-            <td class="space">1.2</td>
-            <td class="space">5V</td>
-            <td class="space">I2C</td>
-            <td class="space"></td>
-            <td class="space">なし</td>
-          </table>
-
-
-          <!-- VA LCD 垂直配向液晶 16x2行WH1602B-VATN -->
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WH0802A1-RLL.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>VA LCD 垂直配向液晶 16x2行WH1602B-VATN</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">その他液晶</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">8×2</td>
-            <td class="space"></td>
-            <td class="space">1.26</td>
-            <td class="space">5V</td>
-            <td class="space">6800<br>SPI<br>I2C</td>
-            <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色<br>その他</td>
-            <td class="space">なし</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WH0802A1-RLL.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>VA LCD 垂直配向液晶 16x2行WH1602B-VATN</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">その他液晶</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">8×2</td>
-            <td class="space"></td>
-            <td class="space">1.26</td>
-            <td class="space">5V</td>
-            <td class="space">6800<br>SPI<br>I2C</td>
-            <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色<br>その他</td>
-            <td class="space">なし</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WH0802A1-RLL.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>VA LCD 垂直配向液晶 16x2行WH1602B-VATN</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">その他液晶</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">8×2</td>
-            <td class="space"></td>
-            <td class="space">1.26</td>
-            <td class="space">5V</td>
-            <td class="space">6800<br>SPI<br>I2C</td>
-            <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色<br>その他</td>
-            <td class="space">なし</td>
-          </table>
-          <!-- V1.77インチ 128x160 ディスプレイ TFT LCD (ST7735S IC) WF18FTLAADNN0 -->
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WF18FTLAADNN0_2.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>V1.77ｲﾝﾁ128x160 ﾃﾞｨｽﾌﾟﾚｲ TFT LCD (ST7735S IC) WF18FTLAADNN0</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">TFT液晶</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">128×160 </td>
-            <td class="space"></td>
-            <td class="space">1.77</td>
-            <td class="space">2.5-4.8V</td>
-            <td class="space">SPI<br>MCU</td>
-            <td class="space"></td>
-            <td class="space">なし</td>
-          </table>
-
-
-          <table class="catelory-list second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WF18FTLAADNN0_2.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>V1.77ｲﾝﾁ128x160 ﾃﾞｨｽﾌﾟﾚｲ TFT LCD (ST7735S IC) WF18FTLAADNN0</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">TFT液晶</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">128×160 </td>
-            <td class="space"></td>
-            <td class="space">1.77</td>
-            <td class="space">2.5-4.8V</td>
-            <td class="space">SPI<br>MCU</td>
-            <td class="space"></td>
-            <td class="space">なし</td>
-          </table>
-
-          <!-- 最後のテーブル -->
-          <table class="catelory-list end second">
-            <tr class="catelory-list-title">
-              <th></th>
-              <th class=""></th>
-              <th class="categoly col-3"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item">
-              </th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-              <th class="item"></th>
-            </tr>
-
-            <td class="new-icon-area">
-              <table>
-                <tr>
-                  <td class="new-icon">
-                    <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
-                  </td>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    </label>
-                  </div>
-                </tr>
-              </table>
-            </td>
-
-            <td class="category-title">
-              <img src="./img/WF18FTLAADNN0_2.jpg" alt="">
-            </td>
-
-            <td class="category-">
-              <table class="category-details">
-                <tr>
-                  <th>V1.77ｲﾝﾁ128x160 ﾃﾞｨｽﾌﾟﾚｲ TFT LCD (ST7735S IC) WF18FTLAADNN0</th>
-                </tr>
-                <tr>
-                  <td class="Maker">メーカー：Winstar Display</td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <td class="Product-name">TFT液晶</td>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="space">128×160 </td>
-            <td class="space"></td>
-            <td class="space">1.77</td>
-            <td class="space">2.5-4.8V</td>
-            <td class="space">SPI<br>MCU</td>
-            <td class="space"></td>
-            <td class="space">なし</td>
-          </table>
+
+            <!-- 二番目以降 -->
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WEG005016AG.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>(参考)タイトルが長く二行を超える場合は最後を省略するWEG00…</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">グラフィック有機ELモジュール</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">
+                <div class="">50×16</div>
+              </td>
+              <td class="space">
+                <div class="">COB</div>
+              </td>
+              <td class="space">
+                <div class="">1.26</div>
+              </td>
+              <td class="space">
+                <div class="">5V</div>
+              </td>
+              <td class="space">
+                <div class="">6800<br>8080<br>spi</div>
+              </td>
+              <td class="space"> デュアルカラー（MOQあり）</td>
+              <td class="space">
+                <div class="">なし</div>
+              </td>
+            </table>
+
+
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WEG005016AG.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>1.26インチ50*16グラフィック有機ELディスプレイWEG005016A</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">グラフィック有機ELモジュール</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">
+                <div class="">50×16</div>
+              </td>
+              <td class="space">
+                <div class="">COB</div>
+              </td>
+              <td class="space">
+                <div class="">1.26</div>
+              </td>
+              <td class="space">
+                <div class="">5V</div>
+              </td>
+              <td class="space">
+                <div class="">6800<br>8080<br>spi</div>
+              </td>
+              <td class="space">
+                <div class="">デュアルカラー(MOQあり)</div>
+              </td>
+              <td class="space">
+                <div class="">なし</div>
+              </td>
+            </table>
+
+
+            <!-- 128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP -->
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WEO012864AWPP3A00000.jpg" class="contain" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">タッチパネル 有機 EL</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">128 x 64</td>
+              <td class="space">COG+PCB+FR</td>
+              <td class="space">1.54</td>
+              <td class="space">3V</td>
+              <td class="space">6800<br>8080<br>spi<br>I2C</td>
+              <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色</td>
+              <td class="space">PCAP<br>OCA</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WEO012864AWPP3A00000.jpg" class="contain" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">タッチパネル 有機 EL</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">128 x 64</td>
+              <td class="space">COG+PCB+FR</td>
+              <td class="space">1.54</td>
+              <td class="space">3V</td>
+              <td class="space">6800<br>8080<br>spi<br>I2C</td>
+              <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色</td>
+              <td class="space">PCAP<br>OCA</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WEO012864AWPP3A00000.jpg" class="contain" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>128x64静電容量式ﾀｯﾁﾊﾟﾈﾙOLEDﾓｼﾞｭｰﾙWEO012864A-CTP</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">タッチパネル 有機 EL</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">128 x 64</td>
+              <td class="space">COG+PCB+FR</td>
+              <td class="space">1.54</td>
+              <td class="space">3V</td>
+              <td class="space">6800<br>8080<br>spi<br>I2C</td>
+              <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色</td>
+              <td class="space">PCAP<br>OCA</td>
+            </table>
+
+
+            <!-- 1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A -->
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WO1602B-YYH.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">キャラクタ有機ELモジュール</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">16×2</td>
+              <td class="space">COG</td>
+              <td class="space">1.2</td>
+              <td class="space">5V</td>
+              <td class="space">I2C</td>
+              <td class="space"></td>
+              <td class="space">なし</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WO1602B-YYH.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">キャラクタ有機ELモジュール</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">16×2</td>
+              <td class="space">COG</td>
+              <td class="space">1.2</td>
+              <td class="space">5V</td>
+              <td class="space">I2C</td>
+              <td class="space"></td>
+              <td class="space">なし</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WO1602B-YYH.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>1.2" 8文字x2行COB OLED ディスプレイモジュールWEH000802A</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">キャラクタ有機ELモジュール</td>
+                        <td class="Product-name2">産業用</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">16×2</td>
+              <td class="space">COG</td>
+              <td class="space">1.2</td>
+              <td class="space">5V</td>
+              <td class="space">I2C</td>
+              <td class="space"></td>
+              <td class="space">なし</td>
+            </table>
+
+
+            <!-- VA LCD 垂直配向液晶 16x2行WH1602B-VATN -->
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WH0802A1-RLL.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>VA LCD 垂直配向液晶 16x2行WH1602B-VATN</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">その他液晶</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">8×2</td>
+              <td class="space"></td>
+              <td class="space">1.26</td>
+              <td class="space">5V</td>
+              <td class="space">6800<br>SPI<br>I2C</td>
+              <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色<br>その他</td>
+              <td class="space">なし</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WH0802A1-RLL.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>VA LCD 垂直配向液晶 16x2行WH1602B-VATN</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">その他液晶</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">8×2</td>
+              <td class="space"></td>
+              <td class="space">1.26</td>
+              <td class="space">5V</td>
+              <td class="space">6800<br>SPI<br>I2C</td>
+              <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色<br>その他</td>
+              <td class="space">なし</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WH0802A1-RLL.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>VA LCD 垂直配向液晶 16x2行WH1602B-VATN</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">その他液晶</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">8×2</td>
+              <td class="space"></td>
+              <td class="space">1.26</td>
+              <td class="space">5V</td>
+              <td class="space">6800<br>SPI<br>I2C</td>
+              <td class="space">赤色<br>緑色<br>青色<br>黄緑色<br>白色<br>その他</td>
+              <td class="space">なし</td>
+            </table>
+            <!-- V1.77インチ 128x160 ディスプレイ TFT LCD (ST7735S IC) WF18FTLAADNN0 -->
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WF18FTLAADNN0_2.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>V1.77ｲﾝﾁ128x160 ﾃﾞｨｽﾌﾟﾚｲ TFT LCD (ST7735S IC) WF18FTLAADNN0</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">TFT液晶</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">128×160 </td>
+              <td class="space"></td>
+              <td class="space">1.77</td>
+              <td class="space">2.5-4.8V</td>
+              <td class="space">SPI<br>MCU</td>
+              <td class="space"></td>
+              <td class="space">なし</td>
+            </table>
+
+
+            <table class="catelory-list second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WF18FTLAADNN0_2.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>V1.77ｲﾝﾁ128x160 ﾃﾞｨｽﾌﾟﾚｲ TFT LCD (ST7735S IC) WF18FTLAADNN0</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">TFT液晶</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">128×160 </td>
+              <td class="space"></td>
+              <td class="space">1.77</td>
+              <td class="space">2.5-4.8V</td>
+              <td class="space">SPI<br>MCU</td>
+              <td class="space"></td>
+              <td class="space">なし</td>
+            </table>
+
+            <!-- 最後のテーブル -->
+            <table class="catelory-list end second">
+              <tr class="catelory-list-title">
+                <th></th>
+                <th class=""></th>
+                <th class="categoly col-3"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item">
+                </th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+                <th class="item"></th>
+              </tr>
+
+              <td class="new-icon-area">
+                <table>
+                  <tr>
+                    <td class="new-icon">
+                      <img src="./img/e0fe4c0c3cdb384ed7f99ed91f8c4d3b.png" class="hidden" alt="">
+                    </td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                  </tr>
+                </table>
+              </td>
+
+              <td class="category-title">
+                <img src="./img/WF18FTLAADNN0_2.jpg" alt="">
+              </td>
+
+              <td class="category-">
+                <table class="category-details">
+                  <tr>
+                    <th>V1.77ｲﾝﾁ128x160 ﾃﾞｨｽﾌﾟﾚｲ TFT LCD (ST7735S IC) WF18FTLAADNN0</th>
+                  </tr>
+                  <tr>
+                    <td class="Maker">メーカー：Winstar Display</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <td class="Product-name">TFT液晶</td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td class="space">128×160 </td>
+              <td class="space"></td>
+              <td class="space">1.77</td>
+              <td class="space">2.5-4.8V</td>
+              <td class="space">SPI<br>MCU</td>
+              <td class="space"></td>
+              <td class="space">なし</td>
+            </table>
           </div>
+        </div>
 
           <div class="nav-box">
             <div class="triangle2">
