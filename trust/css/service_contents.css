@@ -11,7 +11,7 @@ body#service_contents {
 }
 
 #service_contents a:hover {
-  color: white; 
+  color: inherit;
   text-decoration: none;
 }
 
@@ -141,69 +141,57 @@ footer {
 
 .inquiry,
 .toiawase a {
-  background: -moz-linear-gradient(
-    5.86% -33.1% -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    5.86% -33.1%,
-    94.14% 133.1%,
-    color-stop(0, rgba(251, 176, 59, 1)),
-    color-stop(0.0485, rgba(234, 157, 77, 1)),
-    color-stop(0.2264, rgba(177, 90, 137, 1)),
-    color-stop(0.3758, rgba(135, 41, 182, 1)),
-    color-stop(0.4891, rgba(110, 11, 209, 1)),
-    color-stop(0.5531, rgba(100, 0, 219, 1)),
-    color-stop(1, rgba(6, 71, 190, 1))
-  );
-  background: -o-linear-gradient(
-    -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
+  background: -moz-linear-gradient(5.86% -33.1% -30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
+  background: -webkit-linear-gradient(-30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
+  background: -webkit-gradient(linear,
+      5.86% -33.1%,
+      94.14% 133.1%,
+      color-stop(0, rgba(251, 176, 59, 1)),
+      color-stop(0.0485, rgba(234, 157, 77, 1)),
+      color-stop(0.2264, rgba(177, 90, 137, 1)),
+      color-stop(0.3758, rgba(135, 41, 182, 1)),
+      color-stop(0.4891, rgba(110, 11, 209, 1)),
+      color-stop(0.5531, rgba(100, 0, 219, 1)),
+      color-stop(1, rgba(6, 71, 190, 1)));
+  background: -o-linear-gradient(-30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
+  background: -ms-linear-gradient(-30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB03B', endColorstr='#0647BE' ,GradientType=0)";
-  background: linear-gradient(
-    120deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB03B', endColorstr='#0647BE', GradientType=1);
 }
@@ -220,7 +208,7 @@ footer {
   margin: 0 auto;
 }
 
-.inquiry > div > p {
+.inquiry>div>p {
   color: white;
   font-size: 25px;
   text-align: center;
@@ -235,12 +223,12 @@ footer {
 
 .inquiryParts {
   margin-top: 30px;
-    text-align: center;
-    min-height: 200px;
-    min-width: 280px;
-    width: 42.2%;
-    border-radius: 10px;
-    background-color: white;
+  text-align: center;
+  min-height: 200px;
+  min-width: 280px;
+  width: 42.2%;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .inquiryParts.first {
@@ -282,69 +270,57 @@ footer {
   color: white;
   padding: 20px 40px;
   border-radius: 35px;
-  background: -moz-linear-gradient(
-    5.86% -33.1% -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    5.86% -33.1%,
-    94.14% 133.1%,
-    color-stop(0, rgba(251, 176, 59, 1)),
-    color-stop(0.0485, rgba(234, 157, 77, 1)),
-    color-stop(0.2264, rgba(177, 90, 137, 1)),
-    color-stop(0.3758, rgba(135, 41, 182, 1)),
-    color-stop(0.4891, rgba(110, 11, 209, 1)),
-    color-stop(0.5531, rgba(100, 0, 219, 1)),
-    color-stop(1, rgba(6, 71, 190, 1))
-  );
-  background: -o-linear-gradient(
-    -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -30deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
+  background: -moz-linear-gradient(5.86% -33.1% -30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
+  background: -webkit-linear-gradient(-30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
+  background: -webkit-gradient(linear,
+      5.86% -33.1%,
+      94.14% 133.1%,
+      color-stop(0, rgba(251, 176, 59, 1)),
+      color-stop(0.0485, rgba(234, 157, 77, 1)),
+      color-stop(0.2264, rgba(177, 90, 137, 1)),
+      color-stop(0.3758, rgba(135, 41, 182, 1)),
+      color-stop(0.4891, rgba(110, 11, 209, 1)),
+      color-stop(0.5531, rgba(100, 0, 219, 1)),
+      color-stop(1, rgba(6, 71, 190, 1)));
+  background: -o-linear-gradient(-30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
+  background: -ms-linear-gradient(-30deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB03B', endColorstr='#0647BE' ,GradientType=0)";
-  background: linear-gradient(
-    120deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(234, 157, 77, 1) 4.85%,
-    rgba(177, 90, 137, 1) 22.64%,
-    rgba(135, 41, 182, 1) 37.58%,
-    rgba(110, 11, 209, 1) 48.91%,
-    rgba(100, 0, 219, 1) 55.31%,
-    rgba(6, 71, 190, 1) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(234, 157, 77, 1) 4.85%,
+      rgba(177, 90, 137, 1) 22.64%,
+      rgba(135, 41, 182, 1) 37.58%,
+      rgba(110, 11, 209, 1) 48.91%,
+      rgba(100, 0, 219, 1) 55.31%,
+      rgba(6, 71, 190, 1) 100%);
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB03B', endColorstr='#0647BE', GradientType=1);
 
@@ -1068,7 +1044,7 @@ input[name="tab_name"] {
   display: none;
 }
 
-input:checked + .tab_class {
+input:checked+.tab_class {
   background-color: #f1f3f4;
   color: #792ddc;
 }
@@ -1078,7 +1054,7 @@ input:checked + .tab_class {
   width: 100%;
 }
 
-input:checked + .tab_class + .content_class {
+input:checked+.tab_class+.content_class {
   display: block;
 }
 
@@ -1619,14 +1595,18 @@ button.color {
   max-width: 100%;
 }
 
+.lineup-box .col-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 #service_contents .widht365 .card-frame {
   width: 150px;
   margin: 0 auto;
 }
 
-.widht365 .card-img-top{
-  margin-bottom:0;
+.widht365 .card-img-top {
+  margin-bottom: 0;
 }
 
 #service_contents .lineup {
@@ -1662,7 +1642,7 @@ button.color {
 
 #service_contents .h2 h2 {
   padding-bottom: 20px;
-} 
+}
 
 #service_contents p#breadcrumbs {
   margin-bottom: 12px;
@@ -1735,7 +1715,7 @@ button.color {
   text-align: left;
   margin-top: 10px;
   position: relative;
- 
+
 }
 
 
@@ -2070,6 +2050,7 @@ span.breadcrumb_last {
 
 }
 
+
 .move-box h4 {
   font-size: 1.8rem;
 }
@@ -2083,7 +2064,7 @@ span.breadcrumb_last {
 }
 
 .card span.button3 {
-  background: url(../img/arrow11.png);
+  background: url(../img/icon_arrow1_AW_right_32px.png);
   background-repeat: no-repeat;
   background-position: 93% 50%;
   background-size: 12px;
@@ -2100,6 +2081,7 @@ span.breadcrumb_last {
 #service_contents .move-box {
   color: #792ddc;
 }
+
 .move-box .card-frame {
   width: 100%;
   height: 100%;
@@ -2114,6 +2096,7 @@ span.breadcrumb_last {
 .move-box .widht200 {
   padding: 0;
 }
+
 .move-box .card-body.last {
   margin-right: 0px;
 }
@@ -2126,9 +2109,11 @@ span.breadcrumb_last {
 #service_contents .card-body {
   padding-bottom: 15px;
 }
-.move-box　.card-body {
+
+.move-box .card-body {
   padding: 0;
 }
+
 .card-img-top {
   margin-top: 0;
 }
@@ -2137,6 +2122,7 @@ span.breadcrumb_last {
   margin: 0;
   padding: 0;
 }
+
 #service_contents .move-box .lineup-box {
   column-gap: 4%;
 }
@@ -2176,6 +2162,7 @@ span.breadcrumb_last {
 #service_contents .move-box .lineup-box.second {
   margin-bottom: 0px;
 }
+
 /* 
 #service_contents .move-box .lineup-box.second .card-title {
   margin-bottom: 0px;
@@ -2205,7 +2192,7 @@ span.breadcrumb_last {
   border-radius: 65px;
 }
 
-.inquiryForm a:hover {
+#service_contents .inquiryForm a:hover {
   color: white;
   text-decoration: none;
 }
@@ -2226,8 +2213,8 @@ span.breadcrumb_last {
 @media screen and (max-width: 968px) {
 
   #service_contents .widht365 .card-frame {
-   margin-bottom:30px;
-}
+    margin-bottom: 30px;
+  }
 
   #service_contents .h2 h2 {
     font-size: 2rem;
@@ -2237,13 +2224,22 @@ span.breadcrumb_last {
     padding-bottom: 0;
   }
 
-  
+
   #service_contents .topicPath h1 {
     font-size: 1.2rem;
   }
 
   #service_contents .lineuptitle.relationtitle h2 {
-    font-size:1.8rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+
+  #service_contents .move-box .lineup-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
   }
 
   .footer-search {
@@ -2260,9 +2256,9 @@ span.breadcrumb_last {
 
   .footer-search ul li {
     text-indent: 0;
- font-size: 1rem;
+    font-size: 1rem;
 
-}
+  }
 
   .footer-search ul {
     font-size: 1.4rem;
@@ -2356,6 +2352,7 @@ span.breadcrumb_last {
   .table .right p {
     font-size: 1.4rem;
   }
+
   #service_contents .lineup-box {
     display: flex;
     flex-direction: column;
@@ -2376,13 +2373,14 @@ span.breadcrumb_last {
     margin: 0;
   }
 
-  .footer-search ul{
-    padding-left:0;
-    }  
+  .footer-search ul {
+    padding-left: 0;
+  }
 
 }
 
 @media screen and (min-width: 1209px) {
+
   .title,
   .value {
     padding: 10px 20px;
@@ -2421,12 +2419,12 @@ span.breadcrumb_last {
   }
 
 
-  
-.img-box img {
-  width: 8px;
-  height: 10px;
-  margin: 0 8px;
-}
+
+  .img-box img {
+    width: 8px;
+    height: 10px;
+    margin: 0 8px;
+  }
 
   .title,
   .value {
@@ -2447,7 +2445,7 @@ span.breadcrumb_last {
     padding-bottom: 25px;
     padding-left: 1%;
     padding-right: 1%;
-}
+  }
 
   .inquirySection {
     display: flex;
@@ -2480,13 +2478,14 @@ span.breadcrumb_last {
     width: 1200px;
     display: grid;
     grid-template:
-        "gr1 .. gr2 .. gr4"
-        "gr1 .. gr3 .. gr5" /1fr 20px 1fr 20px 1fr;
-}
+      "gr1 .. gr2 .. gr4"
+      "gr1 .. gr3 .. gr5" /1fr 20px 1fr 20px 1fr;
+  }
 
   .sitemapbg h2 {
     font-size: 1.8rem;
   }
+
   .sitemap a {
     font-size: 1.4rem;
   }
@@ -2507,7 +2506,7 @@ span.breadcrumb_last {
     width: 10px;
     height: 12px;
     margin: 0 10px;
-}
+  }
 
   .content-area {
     margin-bottom: 0;
@@ -2519,7 +2518,7 @@ span.breadcrumb_last {
 }
 
 @media screen and (max-width: 968px) {
-  
+
   #service_contents .card-title {
     margin-top: 0;
   }
@@ -2545,6 +2544,7 @@ span.breadcrumb_last {
   .content-area {
     background-color: #f2eafc;
     padding: 20px 20px 0 20px;
+    border-bottom: 1px solid #792DDC;
   }
 
   .content-area .container-1250 p {
@@ -2553,13 +2553,13 @@ span.breadcrumb_last {
 
   #service_contents .content-area p {
     padding-bottom: 20px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
   }
 
   span.breadcrumb_last {
     font-size: 1rem;
-}
+  }
 
   #breadcrumbs span.first {
     font-size: 1rem;
@@ -2603,11 +2603,27 @@ span.breadcrumb_last {
 
   .sitemapbg {
     display: none;
-}
+  }
 
   .footerband {
     font-size: 1.2rem;
+    text-align: center;
+    display: block;
   }
+
+  .fb1 {
+    padding: 8px 0;
+  }
+
+  .fb2 {
+    padding: 0 0 8px 0;
+  }
+
+
+  .fb3 {
+    padding: 0 0 8px 0;
+  }
+
 
   #service_contents .footer-search ul li {
     text-indent: 0;
@@ -2633,7 +2649,7 @@ span.breadcrumb_last {
     padding-top: 30px;
   }
 
-  #service_contents .lineuptitle{
+  #service_contents .lineuptitle {
     margin: 68px auto 24px;
   }
 
@@ -2651,10 +2667,6 @@ span.breadcrumb_last {
     margin-bottom: 10px;
   }
 
-  #service_contents .content-area3 .lineup-box {
-    flex-direction: inherit;
-  } 
-
   .inquiryTitle p {
     font-size: 1.6rem;
     margin-bottom: 0;
@@ -2664,6 +2676,7 @@ span.breadcrumb_last {
   .inquiryTel a {
     font-size: 2.5rem;
   }
+
   .inquiryTitle {
     padding-top: 0px;
     padding-bottom: 5px;
@@ -2698,7 +2711,7 @@ span.breadcrumb_last {
     margin-bottom: 0;
     padding: 17px;
   }
-  
+
 
   .inquiryForm {
     margin-top: 10px;
@@ -2708,35 +2721,36 @@ span.breadcrumb_last {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
+  }
 
-.inquiryForm a {
-  font-size: 1.6rem;
-  min-height: 45px;
-  padding: 13px 25px;
-}
+  .inquiryForm a {
+    font-size: 1.6rem;
+    min-height: 45px;
+    padding: 13px 25px;
+  }
 
 
-  div.inquiry > p {
+  div.inquiry>p {
     font-size: 1.6rem;
     padding-top: 25px;
-}
+  }
 
-footer {
-  margin-top: 90px;
-}
+  footer {
+    margin-top: 90px;
+  }
 
-.footerband a {
-  font-size: 1.2rem;
-}
+  .footerband a {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
 
-.footer-search {
-  display: grid;
-  margin: 0 auto;
-  background-color: black;
-  text-decoration: none;
-  border-bottom: 1px solid;
-}
+  .footer-search {
+    display: grid;
+    margin: 0 auto;
+    background-color: black;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
 
 
 
@@ -2750,6 +2764,7 @@ footer {
   .footer-search {
     border-bottom: 2px solid;
   }
+
   .inquiryForm a:hover {
     font-size: inherit;
     background-position: inherit;
@@ -2758,9 +2773,10 @@ footer {
   #service_contents .content-area3 .lineup-box {
     flex-direction: column;
   }
+
   #service_contents .move-box h4.card-title {
     margin-bottom: 10px;
-}
+  }
 
   #service_contents .content-area3 .card-title-box {
     margin-top: 0px;
@@ -2772,7 +2788,7 @@ footer {
 
   #service_contents .content-area3 .lineup-box {
     flex-direction: column;
-}
+  }
 
   footer {
     margin-top: 90px;
