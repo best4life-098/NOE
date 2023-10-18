@@ -2151,6 +2151,10 @@ span.breadcrumb_last {
   flex: 1 1 auto;
 }
 
+.card-frame a img {
+  width: 100%;
+}
+
 .lineup-box .second {
   margin-bottom: 0;
 }
