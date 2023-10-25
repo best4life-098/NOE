@@ -950,7 +950,6 @@ footer {
 .productcontactleft {
   display: flex;
   align-items: center;
-  width: 420px;
   height: 48px;
   text-decoration: none;
   color: white;
@@ -1888,12 +1887,6 @@ button.left span {
   top: 30%;
 }
 
-#rental .product-box.second {
-  margin-top: 0;
-  padding-top: 0;
-  float: none;
-  right: 0;
-}
 
 button.right a {
   color: white;
@@ -1928,7 +1921,7 @@ button.right span {
 .partnumber {
   display: flex;
   border: #792DDC 1px solid;
-  border-radius: 5px;
+  border-radius: 8px;
   width: fit-content;
   height: 24px;
   text-align: center;
@@ -1952,17 +1945,19 @@ button.right span {
 
 .product-area .right-box {
   width: 100%;
-
+  padding-left: 4%;
 }
 
 .product-area img.contactleftmigi {
   width: auto;
   height: auto;
+  position: relative;
 }
 
 .product-area .productcontactright img {
   width: auto;
   height: 17px;
+  position: relative;
 }
 
 .product-area .right-box .title {
@@ -2051,9 +2046,6 @@ button.right span {
   width: 100%;
 }
 
-.third .date-contents {
-  padding-bottom: 0;
-}
 
 .table-grid {
   display: grid;
@@ -2071,6 +2063,7 @@ button.right span {
   padding: 12px 0 12px 20px;
   background-color: #F2EAFC;
   color: #666666;
+  height: auto;
 }
 
 .th2 {
@@ -2079,6 +2072,7 @@ button.right span {
   padding: 12px 0 12px 20px;
   background-color: #F2EAFC;
   color: #666666;
+  height: auto;
 }
 
 .td1-1 {
@@ -2087,12 +2081,14 @@ button.right span {
   border: 1px solid #CCCCCC;
   border-top: none;
   border-left: none;
+  height: auto;
 }
 
 
 .td1-2 {
   padding: 12px 0 12px 20px;
   border-bottom: 1px solid #CCCCCC;
+  height: auto;
 }
 
 
@@ -2102,12 +2098,13 @@ button.right span {
   border: 1px solid #CCCCCC;
   border-top: none;
   border-left: none;
-
+  height: auto;
 }
 
 .td2-2 {
   padding: 12px 0 12px 20px;
   border-bottom: 1px solid #CCCCCC;
+  height: auto;
 }
 
 .td3-1 {
@@ -2116,11 +2113,13 @@ button.right span {
   border: 1px solid #CCCCCC;
   border-top: none;
   border-left: none;
+  height: auto;
 }
 
 .td3-2 {
   padding: 12px 0 12px 20px;
   border-bottom: 1px solid #CCCCCC;
+  height: auto;
 }
 
 .td4-1 {
@@ -2130,10 +2129,12 @@ button.right span {
   border-top: none;
   border-left: none;
   border-bottom: none;
+  height: auto;
 }
 
 .td4-2 {
   padding: 12px 0 12px 20px;
+  height: auto;
 
 }
 
@@ -2167,7 +2168,8 @@ button.right span {
 }
 
 .product-area .left-box {
-  padding-right: 50px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .sitemap h2::after {
@@ -2262,6 +2264,7 @@ button.right span {
   #rental .title.mobile .h2 h2 {
     display: flex;
     margin-top: 24px;
+    font-size: 2rem;
   }
 
   .title.mobile {
@@ -2273,6 +2276,8 @@ button.right span {
     margin-top: 0;
 
   }
+
+
 
   .productcontact {
     margin-bottom: 20px;
@@ -2314,8 +2319,9 @@ button.right span {
 
   #rental .form-check.second input {
     position: relative;
-    left: 7px;
     top: -5px;
+    left: 0;
+    margin-right: 0;
   }
 
   .service_date .card-body {
@@ -2666,11 +2672,6 @@ button.right span {
   #rental .relationtitle.color-title.second {
     margin-top: 24px;
     margin-bottom: 15px;
-  }
-
-
-  #rental .product-area.second {
-    display: none;
   }
 
 
