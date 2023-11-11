@@ -613,6 +613,7 @@ footer {
   margin-bottom: 15px;
 }
 
+
 .choose {
   display: grid;
   grid-template:
@@ -674,6 +675,16 @@ footer {
 .lineup {
   height: 328px;
 }
+
+
+#products .lineup.first {
+  padding-bottom: 0;
+}
+
+#products .lineup.end {
+  padding-bottom: 20px;
+}
+
 
 .lineupchild {
   width: 1200px;
@@ -1018,7 +1029,7 @@ footer {
   max-width: 1200px;
   width: 100%;
   padding-top: -40px;
-  margin: auto;
+  margin: 0 auto;
   flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
@@ -1055,7 +1066,7 @@ footer {
 
 #products .tab_inner {
   display: flex;
-  width: 100%;
+  width: inherit;
 }
 
 .active,
@@ -1070,6 +1081,7 @@ input[name="tab_name"] {
 input:checked+.tab_class {
   background-color: #f1f3f4;
   color: #792ddc;
+  border-radius: 10px 10px 0 0;
 }
 
 .content_class {
@@ -1084,12 +1096,13 @@ input:checked+.tab_class+.content_class {
   display: flex;
   overflow-y: hidden;
   width: 100%;
+  padding-left: 25px;
 }
 
 .content_class {
   background-color: #f1f3f4;
 
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -1572,6 +1585,7 @@ button.color {
   position: relative;
 }
 
+
 #products .lineuptitle {
   display: flex;
   align-items: center;
@@ -1580,7 +1594,9 @@ button.color {
 #products .lineuptitle img {
   margin-right: 5px;
   margin-bottom: 15px;
+  margin-top: 3px;
 }
+
 
 #products .lineuptitle.relationtitle h2 {
   font-size: 20px;
@@ -1588,6 +1604,32 @@ button.color {
   color: black;
   height: auto;
   padding: 0 0 10px 0;
+  padding-bottom: 5px;
+}
+
+.lineuptitle.relationtitle h2 img:hover,
+.lineuptitle.relationtitle h2 img:active {
+  opacity: 0.6;
+}
+
+#products .lineuptitle.relationtitle h2:hover {
+  color: #666666;
+  cursor: pointer;
+}
+
+#products .lineuptitle.relationtitle h2:active {
+  color: #666666;
+}
+
+.list-value li.choice:hover,
+li.default:hover {
+  color: #792DDC;
+  cursor: pointer;
+}
+
+.list-value li.choice:active,
+li.default:active {
+  color: #792DDC;
 }
 
 #products .search-query.related-products .button-box2 button {
@@ -1693,9 +1735,13 @@ input:checked+.tab_class::before {
   z-index: -1;
 }
 
+a.tab_class3 {
+  margin-right: 0;
+}
+
 #products .col-6 {
   padding: 0;
-  max-width: 590px;
+  flex: inherit;
 }
 
 #products .lineup {
@@ -1703,6 +1749,8 @@ input:checked+.tab_class::before {
   column-gap: 0%;
   gap: 20px;
   padding: 30px 0 20px 0;
+  padding-top: 15px;
+  padding-bottom: 0;
 }
 
 #products .card {
@@ -1723,17 +1771,40 @@ input:checked+.tab_class::before {
 }
 
 .list-box ul {
-  list-style: url(../img/arrow13.png);
+  list-style: none;
   font-size: 1.7rem;
+  background-size: 20px;
+  padding-left: 25px;
 }
 
-.card-body .list-box li {
+.card-body .list-box li.default {
   list-style-position: inside;
+  /* background: url(../img/icon_arrow1_p1_right_32px.png) no-repeat; */
+  background-size: 20px;
+  background-position: 6%;
+  padding-left: 40px;
 }
 
 .card-body .list-box li.choice {
   list-style-position: outside;
+  /* background: url(../img/icon_arrow1_p1_right_32px.png) no-repeat; */
+  background-size: 20px;
+  padding-left: 20px;
+  margin-left: 0px;
+  position: relative;
 }
+
+li.default img {
+
+  height: 20px;
+  vertical-align: text-top;
+}
+
+li.choice img {
+  height: 20px;
+  vertical-align: top;
+}
+
 
 .img-none .img-none {
   display: block;
@@ -1842,6 +1913,10 @@ input:checked+.tab_class::before {
     font-size: 1.2rem;
   }
 
+  .tab_area {
+    width: auto;
+  }
+
   .tab_class img {
     position: absolute;
     right: 5px;
@@ -1857,19 +1932,15 @@ input:checked+.tab_class::before {
     font-size: 1.2rem;
   }
 
-  .tab_area {
-    width: 100%;
-  }
-
   #products .tab_inner {
     display: flex;
-    width: auto;
   }
 
   #products label.tab_class1,
   a.tab_class2 {
-    width: 123px;
+    width: 140px;
   }
+
 
   #products a.tab_class3 {
     width: 170px;
@@ -1889,7 +1960,7 @@ input:checked+.tab_class::before {
   }
 
   #products .lineup {
-    padding: 24px 0 20px 0;
+    /* padding: 24px 0 20px 0; */
     flex-direction: column;
     gap: 15px;
   }
@@ -1906,6 +1977,7 @@ input:checked+.tab_class::before {
 
   #products .lineuptitle.relationtitle h2 {
     font-size: 1.6rem;
+    padding-bottom: 0;
   }
 
   .list-box ul {
