@@ -1061,6 +1061,10 @@ footer {
   background-color: #a371e3;
 }
 
+#products-seach .tab_class3 {
+  border-radius: 10px 10px 0 0;
+}
+
 #products-seach .tab_class3:hover {
   color: #792ddc;
 }
@@ -1086,12 +1090,15 @@ input:checked+.tab_class+.content_class {
   display: flex;
   overflow-y: hidden;
   width: 100%;
+  padding-right: 25px;
+
 }
 
 .content_class {
   background-color: #f1f3f4;
-
-  width: 1200px;
+  padding: 0 25px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -1109,8 +1116,7 @@ input:checked+.tab_class+.content_class {
 
 .contentbgc {
   background-color: #f1f3f4;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 /* アコーディオンメニューのスタイル */
@@ -1590,6 +1596,19 @@ button.color {
   width: 100%;
 }
 
+#products-seach .lineuptitle.second {
+  margin-bottom: 15px;
+}
+
+#products-seach .input-group {
+  flex-wrap: nowrap;
+}
+
+#products-seach .input-group img.trust-logo {
+  max-width: 160px;
+  margin-right: 20px;
+}
+
 #products-seach .lineuptitle img {
   margin-right: 5px;
   margin-bottom: 15px;
@@ -1645,6 +1664,7 @@ button.color {
   margin: 0 auto;
   padding: 0 25px;
   clear: both;
+  background-color: #f1f3f4;
 }
 
 .sidebar {
@@ -1844,7 +1864,7 @@ h3.card-product {
 }
 
 #products-seach .input-group input.form-control {
-  height: inherit;
+  height: 60px;
   border-radius: 10px 0 0 10px;
 }
 
@@ -1875,7 +1895,7 @@ h3.card-product {
 }
 
 .input-group img {
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .form-box {
@@ -1978,9 +1998,9 @@ h3.card-product {
     width: auto;
   }
 
-  #products-seach label.tab_class1,
+  #products-seach a.tab_class1,
   a.tab_class2 {
-    width: 123px;
+    width: 140px;
   }
 
   #products-seach a.tab_class3 {
@@ -2038,7 +2058,7 @@ h3.card-product {
   }
 
   .contentbgc {
-    padding-bottom: 4px;
+    padding-bottom: 24px;
     padding-top: 0;
   }
 
@@ -2183,7 +2203,7 @@ h3.card-product {
   }
 
   #products-seach .lineuptitle.relationtitle {
-    margin-top: 48px;
+    margin-top: 24px;
   }
 
   #products-seach .lineuptitle.first {
@@ -2214,6 +2234,12 @@ h3.card-product {
     height: 50px;
     margin-top: 15px;
     font-size: 1.6rem;
+    max-width: 100px;
+  }
+
+  .input-group {
+    flex-wrap: wrap;
+
   }
 
   .footer-search {
@@ -2244,9 +2270,10 @@ h3.card-product {
     border-right: 1px solid white;
   }
 
-  .input-group {
+  #products-seach .input-group {
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   #txt-search {
@@ -2839,6 +2866,13 @@ h3.card-product {
     padding-left: 0;
   }
 
+}
+
+
+@media screen and (max-width: 390px) {
+  #products-seach .form-control::placeholder {
+    color: transparent;
+  }
 }
 
 @media screen and (max-width: 320px) {
