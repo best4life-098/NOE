@@ -1063,6 +1063,7 @@ footer {
 
 #products-seach .tab_class3 {
   border-radius: 10px 10px 0 0;
+  margin-right: 0;
 }
 
 #products-seach .tab_class3:hover {
@@ -1084,6 +1085,11 @@ input:checked+.tab_class {
 
 input:checked+.tab_class+.content_class {
   display: block;
+}
+
+#products-seach .tab_class1 {
+  margin-left: 25px;
+
 }
 
 .tab_area {
@@ -1108,7 +1114,6 @@ input:checked+.tab_class+.content_class {
   position: absolute;
   top: 0;
   margin: 0 calc(50% - 50vw);
-  width: 100vw;
   height: 100%;
   background-color: #F1F3F4;
   z-index: -5;
@@ -1984,8 +1989,6 @@ h3.card-product {
     padding-left: 7px;
     padding-right: 20px;
     font-size: 1.2rem;
-    height: 38px;
-    padding: 10px 10px 10px 5px;
     text-align: left;
   }
 
@@ -1998,6 +2001,11 @@ h3.card-product {
     width: auto;
   }
 
+  #products-seach a.tab_class1 {
+    margin-left: 0;
+  }
+
+
   #products-seach a.tab_class1,
   a.tab_class2 {
     width: 140px;
@@ -2005,6 +2013,8 @@ h3.card-product {
 
   #products-seach a.tab_class3 {
     width: 170px;
+    position: sticky;
+    right: 0;
   }
 
   .card-body .list-box {
