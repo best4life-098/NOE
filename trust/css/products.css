@@ -1736,7 +1736,7 @@ input:checked+.tab_class::before {
 }
 
 a.tab_class3 {
-  margin-right: 0;
+  margin-right: 25px;
 }
 
 #products .col-6 {
@@ -1774,7 +1774,7 @@ a.tab_class3 {
   list-style: none;
   font-size: 1.7rem;
   background-size: 20px;
-  padding-left: 25px;
+  padding-left: 0;
 }
 
 .card-body .list-box li.default {
@@ -1789,7 +1789,6 @@ a.tab_class3 {
   list-style-position: outside;
   /* background: url(../img/icon_arrow1_p1_right_32px.png) no-repeat; */
   background-size: 20px;
-  padding-left: 20px;
   margin-left: 0px;
   position: relative;
 }
@@ -1944,6 +1943,7 @@ li.choice img {
 
   #products a.tab_class3 {
     width: 170px;
+    margin-right: 0;
   }
 
   #products .card {
@@ -1984,10 +1984,6 @@ li.choice img {
     font-size: 1.4rem;
   }
 
-  .card-body .list-box li.choice {
-    position: relative;
-    left: 5px;
-  }
 
   .card-body .list-box li {
     list-style-position: inside;
