@@ -11,7 +11,7 @@ body#service_contents {
 }
 
 #service_contents a:hover {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
@@ -256,6 +256,11 @@ footer {
   color: black;
 }
 
+
+#service_contents .inquiryTel a:hover {
+  color: black;
+}
+
 .inquiryTel p {
   font-size: 19px;
 }
@@ -453,6 +458,10 @@ footer {
   justify-content: center;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+#service_contents .sitemapbg a:hover {
+  color: inherit;
 }
 
 .sitemap {
@@ -2501,6 +2510,12 @@ span.breadcrumb_last {
   #service_contents .footerband p {
     font-size: 1.0rem;
   }
+
+  .sitemap .smcolmun.smc {
+    position: relative;
+    top: 35px;
+  }
+
 }
 
 @media screen and (min-width: 969px) {
