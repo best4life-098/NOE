@@ -11,7 +11,7 @@ body#service {
 }
 
 #service a:hover {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
@@ -256,6 +256,11 @@ footer {
   color: black;
 }
 
+
+.inquiryTel a:hover {
+  color: black;
+}
+
 .inquiryTel p {
   font-size: 19px;
 }
@@ -453,6 +458,10 @@ footer {
   justify-content: center;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+#service .sitemapbg a:hover {
+  color: inherit;
 }
 
 .sitemap {
@@ -2462,6 +2471,11 @@ span.breadcrumb_last {
 
   #service .footerband p {
     font-size: 1.0rem;
+  }
+
+  .sitemap .smcolmun.smc {
+    position: relative;
+    top: 35px;
   }
 }
 
