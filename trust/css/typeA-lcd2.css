@@ -11,6 +11,7 @@
       "grfooter grfooter grfooter grfooter"
       /240px 1fr 1250px 1fr;
     ;
+    font-size: 10px;
   }
 
   .grline {
@@ -63,8 +64,14 @@
     margin-top: 150px;
   }
 
+  #lcd2 a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
   .webshop p {
     padding: 5px 0 0 20px;
+    margin: 0;
   }
 
   .toiawase a {
@@ -77,8 +84,38 @@
     border-radius: 30px;
   }
 
+  .topicPath-area {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  #lcd2 p#breadcrumbs {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .img-box img {
+    width: 10px;
+    height: 12px;
+    margin: 0 10px;
+  }
+
+  span.breadcrumb_last {
+    position: relative;
+    text-decoration: underline;
+  }
+
+  .topicPath h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
   .toiawase p {
     padding: 5px 0 0 15px;
+    margin: 0;
   }
 
   .toiawase a {
@@ -123,7 +160,7 @@
     text-decoration: none;
     background-color: black;
     color: white;
-    padding-top: 8px;
+    padding: 12px 0 12px 0;
     /* 	position: relative; */
     overflow: visible;
     position: sticky;
@@ -155,17 +192,7 @@
   span.breadcrumb_last {
     /*     display: none; */
     position: relative;
-    color: black;
-  }
 
-  .breadcrumb_last::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background-color: black;
-    left: -23px
   }
 
   .topicPath span {
@@ -180,9 +207,7 @@
     z-index: 5;
   }
 
-  #breadcrumbs {
-    margin-left: 20px;
-  }
+
 
   @media (max-width: 600px) {
     .sidebar {
@@ -480,14 +505,6 @@
     padding: 3px 0;
   }
 
-  .smonlineshopcategory1 img {
-    margin-left: -10px;
-  }
-
-  .smonlineshopcategory2 img {
-    margin-left: -5px;
-  }
-
   .footerband {
     grid-area: grfooter;
     background-color: black;
@@ -500,7 +517,6 @@
       "... fb1 fb2 fb3 ..." 20px
       "... ... ... ... ..."
       "... fb4 fb4 fb4 ..."
-      "... ... ... ... ..."
       /1fr auto auto auto 1fr;
   }
 
@@ -524,10 +540,15 @@
     text-align: center;
   }
 
+  .fb4 p {
+    font-size: 12px;
+  }
+
   .footerband a {
     text-decoration: none;
     color: white;
     padding: 0 20px;
+    font-size: 14px;
   }
 
   .pagetop {
